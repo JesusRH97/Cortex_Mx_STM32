@@ -49,5 +49,12 @@ int main(void)
 
 	printf("\nResult = %d\n", ret);
 
+	generate_exception();
+
 	for(;;);
+}
+
+void SVC_Handler(void)
+{
+	printf("	in SVC_Handler\n");
 }
